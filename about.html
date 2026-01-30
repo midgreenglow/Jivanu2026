@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Jivanu Therapeutics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .team-section {
+            padding: 80px 0;
+        }
+
+        .founder-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .founder-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--cyan);
+        }
+
+        .founder-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--cyan);
+        }
+
+        .founder-info {
+            padding: 2rem;
+        }
+
+        .founder-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--navy);
+        }
+
+        .founder-info p {
+            color: var(--cyan);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            color: var(--navy);
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            color: var(--cyan);
+            transform: scale(1.2);
+        }
+
+        .member-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .member-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--cyan);
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+            border: 2px solid var(--border-color);
+        }
+
+        .member-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: var(--navy);
+        }
+
+        .member-card p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .team-group-photo {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 24px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .overlay-title {
+            position: relative;
+            z-index: 1;
+        }
+
+        .overlay-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--cyan);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <div class="logo">Jivanu<span>.</span></div>
+                <div class="logo-tagline">Microbes to Medicine</div>
+            </a>
+            <nav class="flex items-center">
+                <div class="nav-links flex">
+                    <a href="index.html">Home</a>
+                    <a href="atlas.html">Jivanu Atlas™</a>
+                    <a href="rebiome.html">ReBiome™</a>
+                    <a href="novabiome.html">NovaBiome™</a>
+                    <a href="about.html" class="active">Team</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Redesigned Hero & Founders Section -->
+        <section class="section"
+            style="padding-top: 180px; padding-bottom: 100px; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); overflow: hidden;">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+                    <!-- Left: Mission Text -->
+                    <div class="hero-text-side">
+                        <span class="tag">The Jivanu Team</span>
+                        <h1 style="font-size: 4rem; margin-top: 1.5rem; line-height: 1.1;" class="overlay-title">Meet
+                            the Pioneers</h1>
+                        <p
+                            style="font-size: 1.35rem; color: var(--navy); margin-top: 2.5rem; line-height: 1.8; font-weight: 500;">
+                            Combining deep expertise in microbiology, translational science, and clinical research to
+                            unlock the power of the gut microbiome.
+                        </p>
+                        <p style="margin-top: 1.5rem; color: var(--text-muted); line-height: 1.7;">
+                            Our founders are visionaries behind Jivanu's microbiome-first philosophy, transforming
+                            complex genomic research into precision-driven therapies.
+                        </p>
+                    </div>
+
+                    <!-- Right: Founders -->
+                    <div class="founders-side flex" style="gap: 2.5rem; justify-content: center;">
+                        <!-- Founder: Sachet -->
+                        <div class="founder-card" style="width: 320px; transform: none;">
+                            <img src="assets/images/sachet.png" alt="Sachet" class="founder-image"
+                                style="height: 350px;">
+                            <div class="founder-info" style="padding: 2rem;">
+                                <h3 style="font-size: 1.6rem;">Sachet</h3>
+                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Founder</p>
+                                <div class="social-icons" style="gap: 1.2rem; font-size: 1.4rem;">
+                                    <a href="https://www.linkedin.com/in/sachet-shukla-3928aa/" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="mailto:sachet.shukla@jivanutx.com"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Founder: Kunal -->
+                        <div class="founder-card" style="width: 320px; transform: none;">
+                            <img src="assets/images/kunal.png" alt="Kunal" class="founder-image" style="height: 350px;">
+                            <div class="founder-info" style="padding: 2rem;">
+                                <h3 style="font-size: 1.6rem;">Kunal</h3>
+                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Founder</p>
+                                <div class="social-icons" style="gap: 1.2rem; font-size: 1.4rem;">
+                                    <a href="https://www.linkedin.com/in/kunal-rai-80/" target="_blank"><i
+                                            class="fab fa-linkedin"></i></a>
+                                    <a href="mailto:kunal.rai@jivanutx.com"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group Photo Section -->
+        <section class="section" style="background: var(--navy); padding: 100px 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
+                    <h2 style="color: white;">Stronger Together</h2>
+                    <p style="color: rgba(255,255,255,0.7);">Our diverse team bringing discoveries from lab to life</p>
+                </div>
+                <img src="assets/images/Team.jpg" alt="Jivanu Team Group Photo" class="team-group-photo">
+            </div>
+        </section>
+
+        <!-- Team Members Section -->
+        <section class="team-section" style="background: var(--light-bg);">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 5rem;">
+                    <h2>The Jivanu Team</h2>
+                    <p>Dedicated professionals driving innovation every day</p>
+                </div>
+                <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2rem;">
+                    <!-- Team Member 1 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="K Sunil Kini" class="member-image">
+                        <h4>K Sunil Kini</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Aakanksha Verma" class="member-image">
+                        <h4>Aakanksha Verma</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Hithesh Kumar Ck" class="member-image">
+                        <h4>Hithesh Kumar Ck</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Anirban Ghosh" class="member-image">
+                        <h4>Anirban Ghosh</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 5 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Gopika Menon" class="member-image">
+                        <h4>Gopika Menon</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 6 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Karanveer" class="member-image">
+                        <h4>Karanveer</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 7 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Venkat Chand Godugu" class="member-image">
+                        <h4>Venkat Chand Godugu</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 8 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Pawan Kumar" class="member-image">
+                        <h4>Pawan Kumar</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 9 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Rohit Kongari" class="member-image">
+                        <h4>Rohit Kongari</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 10 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Kalyani" class="member-image">
+                        <h4>Kalyani</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 11 -->
+                    <div class="member-card">
+                        <img src="assets/images/team_placeholder.png" alt="Prachetash Ghosh" class="member-image">
+                        <h4>Prachetash Ghosh</h4>
+                        <p>Team Member</p>
+                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTAs -->
+        <section class="section" style="background: var(--white); text-align: center;">
+            <div class="container">
+                <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 4rem;">
+                    <div class="problem-card"
+                        style="text-align: left; padding: 3.5rem; background: var(--light-bg); border: none;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">🎯</div>
+                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--navy);">Our Mission</h3>
+                        <p style="color: var(--text-main); line-height: 1.8;">To empower people with deep biological
+                            insights that lead to better health outcomes. We are dedicated to translating complex
+                            microbiome data into precision-driven therapies that target the root cause of disease.</p>
+                    </div>
+                    <div class="problem-card"
+                        style="text-align: left; padding: 3.5rem; background: var(--light-bg); border: none;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">🔭</div>
+                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--navy);">Our Vision</h3>
+                        <p style="color: var(--text-main); line-height: 1.8;">A world where microbiome health is as
+                            foundational to medicine as genetics. We envision a future where personalized microbial
+                            interventions are accessible to all.</p>
+                    </div>
+                </div>
+                <div style="margin-top: 6rem;">
+                    <h2 style="margin-bottom: 1.5rem;">Want to Join the Revolution?</h2>
+                    <p style="margin-bottom: 3rem; color: var(--text-muted);">We're always looking for talented
+                        researchers, scientists, and engineers.</p>
+                    <a href="careers.html" class="btn btn-primary">Work with Jivanu</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid footer-grid">
+                <div>
+                    <div class="footer-logo">Jivanu<span>.</span></div>
+                    <p>India’s Early Innovator in Microbiome-Based Therapeutics. Science-Driven Solutions for Complex
+                        Diseases.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Platforms</h4>
+                    <ul>
+                        <li><a href="atlas.html">Jivanu Atlas™</a></li>
+                        <li><a href="rebiome.html">ReBiome™</a></li>
+                        <li><a href="novabiome.html">NovaBiome™</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

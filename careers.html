@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Join Jivanu Therapeutics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-mini {
+            position: relative;
+            background: linear-gradient(rgba(11, 31, 51, 0.85), rgba(11, 31, 51, 0.85)), url('assets/images/careers_hero.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 160px 0 100px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .hero-mini .tag {
+            background: rgba(31, 202, 211, 0.2);
+            color: var(--cyan);
+            border: 1px solid rgba(31, 202, 211, 0.3);
+            backdrop-filter: blur(5px);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .job-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .job-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .job-card.closed {
+            opacity: 0.8;
+            background: #f8fafc;
+        }
+
+        .job-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--cyan);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .job-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .job-card h3 {
+            margin-bottom: 1rem;
+            color: var(--navy);
+            font-size: 1.4rem;
+        }
+
+        .job-tag {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: #e2e8f0;
+            color: var(--text-muted);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .status-tag {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            background: #fee2e2;
+            color: #ef4444;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .comp-bio-section {
+            background: var(--navy);
+            color: white;
+            padding: 100px 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .comp-bio-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .comp-bio-visual {
+            border-radius: 30px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <div class="logo">Jivanu<span>.</span></div>
+                <div class="logo-tagline">Microbes to Medicine</div>
+            </a>
+            <nav class="flex items-center">
+                <div class="nav-links flex">
+                    <a href="index.html">Home</a>
+                    <a href="atlas.html">Jivanu Atlas™</a>
+                    <a href="rebiome.html">ReBiome™</a>
+                    <a href="novabiome.html">NovaBiome™</a>
+                    <a href="about.html">Team</a>
+                    <a href="careers.html" class="active">Careers</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Careers Hero -->
+        <section class="hero-mini">
+            <div class="container">
+                <span class="tag">Work With Us</span>
+                <h1 style="font-size: 4rem; color: white; margin-top: 1.5rem;">Join the Future of Science</h1>
+                <p style="font-size: 1.25rem; max-width: 800px; margin: 3rem auto 0; opacity: 0.9; line-height: 1.8;">
+                    At Jivanu, we are decoding the biome to transform medicine. Join a team dedicated to innovation,
+                    discovery, and clinical impact.
+                </p>
+            </div>
+        </section>
+
+        <!-- Current Openings Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2>Current Openings</h2>
+                    <p>We are currently seeking talented individuals to join our growing team. While many positions are
+                        currently closed, we are always looking for exceptional talent.</p>
+                </div>
+
+                <div class="job-grid">
+                    <!-- Project Manager -->
+                    <div class="job-card closed">
+                        <span class="job-tag">Management</span>
+                        <h3>Project Manager</h3>
+                        <p>Overseeing translational research projects and clinical collaborations.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+
+                    <!-- Senior Research Scientist @ Manipal -->
+                    <div class="job-card closed">
+                        <span class="job-tag">R&D | Manipal</span>
+                        <h3>Senior Research Scientist</h3>
+                        <p>Leading experimental design and microbial profiling at our Manipal facility.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+
+                    <!-- Senior Research Scientist @ Bengaluru -->
+                    <div class="job-card closed">
+                        <span class="job-tag">R&D | Bengaluru</span>
+                        <h3>Senior Research Scientist</h3>
+                        <p>Driving core scientific discovery and therapeutic platform development.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+
+                    <!-- Research Scientist -->
+                    <div class="job-card closed">
+                        <span class="job-tag">R&D</span>
+                        <h3>Research Scientist</h3>
+                        <p>Executing laboratory protocols and supporting platform-based research.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+
+                    <!-- Principal Research Scientist -->
+                    <div class="job-card closed">
+                        <span class="job-tag">R&D</span>
+                        <h3>Principal or Senior Research Scientist</h3>
+                        <p>Strategic leadership in microbiome therapeutic innovations.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+
+                    <!-- Clinical Associate -->
+                    <div class="job-card closed">
+                        <span class="job-tag">Clinical</span>
+                        <h3>Senior Clinical Associate or Clinical Scientist</h3>
+                        <p>Managing clinical trials and hospital-based research partnerships.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+
+                    <!-- Computational Biologist -->
+                    <div class="job-card closed">
+                        <span class="job-tag">Data Science</span>
+                        <h3>Computational Biologist - Gut Microbiome Analysis</h3>
+                        <p>Applying AI and machine learning to large-scale microbiome datasets.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+
+                    <!-- Principal Scientist @ Bengaluru -->
+                    <div class="job-card closed">
+                        <span class="job-tag">R&D | Bengaluru</span>
+                        <h3>Principal or Senior Research Scientist</h3>
+                        <p>Advanced lead in microbiome therapeutic engineering.</p>
+                        <span class="status-tag">Position Closed</span>
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 6rem; text-align: center; border-top: 1px solid var(--border-color); padding-top: 4rem;">
+                    <h3>Don't see a fit?</h3>
+                    <p style="margin: 1.5rem 0; color: var(--text-muted);">We are always on the lookout for passion and
+                        expertise. Send your resume to</p>
+                    <a href="mailto:info@jivanutx.com"
+                        style="font-size: 1.5rem; color: var(--cyan); font-weight: 700; text-decoration: none;">info@jivanutx.com</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Computational Biology Branding -->
+        <section class="comp-bio-section">
+            <div class="container">
+                <div class="comp-bio-content">
+                    <div>
+                        <span class="tag" style="border-color: rgba(255,255,255,0.3); color: var(--cyan);">AI &
+                            Bio-Informatics</span>
+                        <h2 style="color: white; font-size: 3rem; margin-top: 1.5rem;">Decoding Complexity with AI</h2>
+                        <p style="margin: 2rem 0; font-size: 1.15rem; line-height: 1.8; opacity: 0.85;">
+                            At Jivanu, we don't just study microbes; we decode their functions using proprietary
+                            computational pipelines. Our approach combines traditional microbiology with advanced neural
+                            networks to predict therapeutic outcomes.
+                        </p>
+                        <ul style="list-style: none;">
+                            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--cyan); font-size: 1.5rem;">✔</span>
+                                <span>Multi-omic data integration</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--cyan); font-size: 1.5rem;">✔</span>
+                                <span>Foundational microbial foundation models</span>
+                            </li>
+                            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 1rem;">
+                                <span style="color: var(--cyan); font-size: 1.5rem;">✔</span>
+                                <span>Cloud-scale microbiome analysis</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="comp-bio-visual">
+                        <img src="assets/images/comp_bio.png" alt="Computational Biology Visual"
+                            style="width: 100%; border-radius: 30px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid footer-grid">
+                <div>
+                    <div class="footer-logo">Jivanu<span>.</span></div>
+                    <p>India’s Early Innovator in Microbiome-Based Therapeutics. Science-Driven Solutions for Complex
+                        Diseases.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Platforms</h4>
+                    <ul>
+                        <li><a href="atlas.html">Jivanu Atlas™</a></li>
+                        <li><a href="rebiome.html">ReBiome™</a></li>
+                        <li><a href="novabiome.html">NovaBiome™</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
