@@ -847,6 +847,20 @@ footer {
     padding-bottom: 0.5rem;
 }
 
+.mobile-signin-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.mobile-signin-row .mobile-link {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
 .mobile-link:hover {
     color: var(--cyan);
     padding-left: 10px;
@@ -947,6 +961,19 @@ footer {
     position: relative;
     display: inline-flex;
     align-items: center;
+}
+
+.theme-switch.compact .theme-slider {
+    width: 44px;
+    height: 24px;
+}
+
+.theme-switch.compact .theme-slider::before {
+    left: 8px;
+}
+
+.theme-switch.compact input:checked + .theme-slider .theme-knob {
+    transform: translateX(18px);
 }
 
 .theme-switch input {
