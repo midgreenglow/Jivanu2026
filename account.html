@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | Jivanu Therapeutics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/account.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <div class="logo">Jivanu<span>.</span></div>
+                <div class="logo-tagline">Microbes to Medicine</div>
+            </a>
+            <nav class="flex items-center">
+                <div class="nav-links flex items-center">
+                    <a href="index.html">Home</a>
+                    <a href="atlas.html">Jivanu Atlas™</a>
+                    <a href="rebiome.html">ReBiome™</a>
+                    <a href="novabiome.html">NovaBiome™</a>
+                </div>
+
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
+                    <a href="team.html" class="mobile-link">Team</a>
+                    <a href="careers.html" class="mobile-link">Careers</a>
+                    <a href="contact.html" class="mobile-link">Contact</a>
+                    <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container">
+                <div class="account-header">
+                    <div>
+                        <h1 class="section-title">My Account</h1>
+                        <p class="section-lead">Your reports and account details.</p>
+                    </div>
+                    <button class="btn btn-secondary" id="signout-btn">Sign Out</button>
+                </div>
+
+                <div class="account-card" id="account-info">
+                    <h2>Profile</h2>
+                    <div class="account-fields">
+                        <div>
+                            <span>Email</span>
+                            <strong id="account-email">—</strong>
+                        </div>
+                        <div>
+                            <span>Phone</span>
+                            <strong id="account-phone">—</strong>
+                        </div>
+                        <div>
+                            <span>Member Since</span>
+                            <strong id="account-created">—</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="account-card">
+                    <div class="reports-header">
+                        <h2>Your Reports</h2>
+                        <p>Download the latest reports uploaded by our team.</p>
+                    </div>
+                    <div id="reports-list" class="reports-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

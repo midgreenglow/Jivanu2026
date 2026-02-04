@@ -164,8 +164,8 @@
     <script src="js/script.js" defer></script>
 </head>
 
-<body>
-    <header>
+<body class="bg-fafafa">
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -178,18 +178,25 @@
                     <a href="rebiome.html">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -246,7 +253,7 @@
                 <div class="summary-blockquote">
                     <strong>Summary:</strong> Both controlled and real-world data support FMT’s role in inducing
                     remission in UC, with substantial clinical evidence contributed by major Indian medical centers.
-                </div>
+                    </div>
             </section>
 
             <section class="blog-section">
@@ -266,7 +273,7 @@
                 <div class="summary-blockquote">
                     <strong>Summary:</strong> FMT is highly effective in resolving recurrent CDI, even in
                     immunocompromised patients, aligning Indian clinical success with global benchmarks.
-                </div>
+                    </div>
             </section>
 
             <section class="blog-section">
@@ -360,7 +367,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <!-- ... footer links (same as before) ... -->
                 <div class="footer-links">
                     <h4>Platforms</h4>
@@ -369,7 +376,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -377,7 +384,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -385,7 +392,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>

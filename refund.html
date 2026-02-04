@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -23,48 +23,66 @@
                     <a href="rebiome.html">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="section" style="padding: 120px 0 60px;">
-            <div class="container">
-                <h1 style="margin-bottom: 2rem; color: var(--navy);">Refund Policy</h1>
-                <p style="margin-bottom: 2rem; color: var(--text-muted);">Last Updated: 03-02-2026</p>
+        <section class="section legal-section">
+            <div class="container legal-container">
 
-                <div class="legal-content" style="line-height: 1.6; color: var(--text-main);">
-                    <p>At Jivanu Therapeutics, we are committed to providing the best possible service in microbiome
-                        therapeutics.</p>
+                <header class="legal-header">
+                    <h1 class="legal-title">Refund Policy</h1>
+                    <p class="legal-updated">Last Updated: 03 February 2026</p>
+                </header>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">General Refund Guidelines
-                    </h2>
-                    <p>Refunds, if any, are governed by the applicable service-specific policy.</p>
-                    <p>As per our Terms of Service (Section 10), users agree to provide accurate billing and account
-                        information. Due to the nature of our biological services and custom microbiome analysis:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Requests for refunds are evaluated on a case-by-case basis.</li>
-                        <li>Certain biological collection kits or processed samples may not be eligible for return or
-                            refund once dispatched or processed.</li>
-                    </ul>
+                <div class="legal-content">
+                    <p class="legal-intro">
+                        At <strong>Jivanu Therapeutics Pvt. Ltd.</strong>, we are committed to maintaining the highest
+                        standards of service across our microbiome-based offerings. Due to the customized, biological,
+                        and analytical nature of our services, refund eligibility is assessed carefully and in
+                        accordance with regulatory, operational, and scientific considerations.
+                    </p>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">Contact Us</h2>
-                    <p>If you have questions about a charge or wish to request a refund, please contact our support team
-                        at <a href="contact.html">Contact Us</a> with your order details.</p>
-                </div>
+                    <p>
+                        Refund requests, if any, are evaluated on a case-by-case basis and are subject to the specific
+                        service purchased. Certain biological collection kits, consumables, or microbiome analyses may
+                        not be eligible for return or refund once dispatched, used, or processed, as such services
+                        involve irreversible handling and laboratory workflows.
+                    </p>
+
+                    <p>
+                        By placing an order, you acknowledge and agree that once biological samples have been collected,
+                        processed, or analyzed, the associated services may no longer be cancellable or refundable,
+                        except where required by applicable law.
+                    </p>
+
+                    <p class="legal-contact">
+                        For billing-related inquiries or to submit a refund request, please contact our support team
+                        via the <a href="contact.html">Contact Us</a> page with relevant order details.
+                    </p>
+                    </div>
+
             </div>
         </section>
     </main>
@@ -75,7 +93,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Platforms</h4>
                     <ul>
@@ -83,7 +101,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -91,7 +109,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -99,7 +117,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>

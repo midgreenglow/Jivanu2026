@@ -9,8 +9,8 @@
     <script src="js/script.js" defer></script>
 </head>
 
-<body>
-    <header>
+<body class="bg-f5f7fa">
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -23,18 +23,25 @@
                     <a href="rebiome.html" class="active">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -57,10 +64,10 @@
                         <a href="contact.html" class="btn btn-primary">Contact Our Team</a>
                         <a href="evidence.html" class="btn btn-secondary">Clinical Evidence</a>
                     </div>
-                </div>
+                    </div>
                 <div class="hero-visual">
                     <img src="assets/images/rebiome.jpg" alt="ReBiome Therapeutics">
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -69,18 +76,20 @@
             <div class="container">
                 <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                     <div>
-                        <h2>Understanding the Gut Ecosystem</h2>
-                        <p style="margin: 1.5rem 0; text-align: justify;">The human gut hosts trillions of microbes that
+                        <h2 class="section-title">Understanding the Gut Ecosystem</h2>
+                        <p class="hero-lead" style="margin: 1.5rem 0; font-size: 1.25rem; text-align: justify;">The human gut hosts trillions of microbes that
                             play a central role in digestion, immune regulation, and metabolic health. When this
                             ecosystem becomes imbalanced-a condition known as <strong>gut dysbiosis</strong>-it has been
                             linked to
                             chronic gastrointestinal and inflammatory conditions.</p>
-                        <p style="text-align: justify;"><strong>Fecal Microbiota Transplantation (FMT)</strong> is a
+                        <p class="hero-lead" style="font-size: 1.25rem; text-align: justify;"><strong>Fecal Microbiota Transplantation (FMT)</strong> is a
                             microbiome-based
                             approach that aims to restore this balance by introducing healthy, carefully screened gut
                             microbes into the recipient. Over the last decade, FMT has emerged as one of the most
                             promising microbiome interventions worldwide.</p>
                     </div>
+
+            
                     <div>
                         <div class="problem-card" style="background: var(--navy); color: white; padding: 3rem;">
                             <h3 style="color: white; margin-bottom: 1.5rem;">Our Approach</h3>
@@ -106,7 +115,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -115,7 +124,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Introducing ReBiome™</h2>
-                </div>
+                    </div>
                 <div style="max-width: 800px; margin: 0 auto; text-align: center;">
                     <p style="margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8;"><strong>ReBiome™</strong> is
                         Jivanu
@@ -127,7 +136,7 @@
                     <p>We offer both <strong>conventional and capsulized FMT products,</strong> developed for research
                         collaborations and
                         clinical studies.</p>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -136,7 +145,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>ReBiome™ Donor Excellence</h2>
-                </div>
+                    </div>
                 <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 3rem;">
                     <div class="problem-card">
                         <h3>Nationwide, Data‑Driven Donors</h3>
@@ -153,7 +162,7 @@
                             bank-restoring gut balance, replenishing good bacteria, and targeting dysbiosis with
                             personalized, data-driven therapy. <strong>Your donor, your match!</strong></p>
                     </div>
-                </div>
+                    </div>
 
                 <div
                     style="margin-top: 5rem; text-align: center; background: var(--navy); color: white; padding: 4rem 3rem; border-radius: 24px;">
@@ -176,7 +185,7 @@
                                 Drug Control Department (Form 29) <span style="margin-left: 10px;">✅</span></span>
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -185,7 +194,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Why ReBiome™ Matters</h2>
-                </div>
+                    </div>
                 <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                     <div class="problem-card" style="text-align: center;">
                         <span style="font-size: 2.5rem; display: block; margin-bottom: 1rem;">🇮🇳</span>
@@ -199,7 +208,7 @@
                         <span style="font-size: 2.5rem; display: block; margin-bottom: 1rem;">🔬</span>
                         <p>Anchored in scientific transparency, bridging research and future therapies</p>
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -213,7 +222,7 @@
                         you a Patient?</a>
                     <a href="contact.html" class="btn btn-secondary" style="border-color: white; color: white;">Are you
                         a Doctor?</a>
-                </div>
+                    </div>
             </div>
         </section>
     </main>
@@ -224,7 +233,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Platforms</h4>
                     <ul>
@@ -232,7 +241,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -240,7 +249,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -248,7 +257,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>

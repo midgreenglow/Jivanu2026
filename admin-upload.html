@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Upload | Jivanu Therapeutics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/admin.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <div class="logo">Jivanu<span>.</span></div>
+                <div class="logo-tagline">Microbes to Medicine</div>
+            </a>
+            <nav class="flex items-center">
+                <div class="nav-links flex items-center">
+                    <a href="index.html">Home</a>
+                    <a href="atlas.html">Jivanu Atlas™</a>
+                    <a href="rebiome.html">ReBiome™</a>
+                    <a href="novabiome.html">NovaBiome™</a>
+                </div>
+
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+
+                <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
+                    <a href="team.html" class="mobile-link">Team</a>
+                    <a href="careers.html" class="mobile-link">Careers</a>
+                    <a href="contact.html" class="mobile-link">Contact</a>
+                    <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container">
+                <div class="auth-header">
+                    <h1 class="section-title">Admin Upload (Local Only)</h1>
+                    <p class="section-lead">Upload a PDF report to a specific user account.</p>
+                </div>
+
+                <div class="auth-card auth-card-wide">
+                    <form id="admin-upload-form" enctype="multipart/form-data">
+                        <label>Admin Secret</label>
+                        <input type="password" name="adminSecret" placeholder="Enter admin secret" required>
+
+                        <label>User Email</label>
+                        <input type="email" name="userEmail" placeholder="user@example.com">
+
+                        <label>User Phone</label>
+                        <input type="text" name="userPhone" placeholder="+91 90000 00000">
+
+                        <label>Report Title</label>
+                        <input type="text" name="title" placeholder="Report Title" required>
+
+                        <label>PDF Report</label>
+                        <input type="file" name="report" accept="application/pdf" required>
+
+                        <button type="submit" class="btn btn-primary">Upload Report</button>
+                    </form>
+                    <p class="auth-helper" id="admin-upload-message"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

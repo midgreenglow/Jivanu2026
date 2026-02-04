@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -25,18 +25,25 @@
                     <a href="rebiome.html">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -47,24 +54,21 @@
         <section class="hero">
             <div class="container flex items-center">
                 <div class="hero-content" style="flex: 0 0 55%; max-width: 650px; margin-right: 5rem;">
-                    <h1 style="font-size: 2.8rem; line-height: 1.2; margin-bottom: 2rem; color: var(--navy);">The
+                    
+                    <h1 class="hero-title">The
                         future of Medicine is already inside you!</h1>
 
-                    <p
-                        style="font-size: 1.6rem; color: var(--cyan); font-weight: 700; margin-bottom: 0px; font-family: 'Outfit', sans-serif;">
-                        Translating Microbial Complexity into Clinical Clarity</p>
+                    <p class="hero-subtitle"><h2><strong> Translating Microbial Complexity into Clinical Clarity</strong></h2></p>
 
-                    <h2
-                        style="font-size: 1.4rem; font-weight: 400; margin-bottom: 2rem; color: var(--text-main); line-height: 1.6; font-family: 'Inter', sans-serif; text-align: justify;">
-                        Jivanu is pioneering India’s first wave of microbiome-based therapeutics- moving beyond
+                    <p class="hero-lead" style="text-align: justify;">
+                        Jivanu is pioneering India’s first wave of microbiome-based therapeutics, moving beyond
                         symptom
                         management to deliver science driven cures for the gut, brain, liver and beyond.
-                    </h2>
-
-                </div>
+                    </p>
+                    </div>
                 <div class="hero-visual">
                     <img src="assets/images/hero.png" alt="Microbiome Visualization">
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -74,7 +78,7 @@
                 <div class="section-header">
                     <h2>Science-Driven Solutions</h2>
                     <p>Moving discoveries from the lab to meaningful clinical impact.</p>
-                </div>
+                    </div>
                 <div class="platforms-grid">
                     <a href="atlas.html" class="dark-platform-card">
                         <div class="platform-icon">📊</div>
@@ -103,7 +107,7 @@
                         <p>Next-Generation Microbiome Therapeutics Platform.</p>
                         <div class="explore-link">Explore Platform <span>→</span></div>
                     </a>
-                </div>
+                    </div>
             </div>
         </section>
     </main>
@@ -114,7 +118,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Platforms</h4>
                     <ul>
@@ -122,7 +126,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -130,7 +134,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -138,7 +142,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>

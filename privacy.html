@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -23,246 +23,166 @@
                     <a href="rebiome.html">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="section" style="padding: 120px 0 60px;">
-            <div class="container">
-                <h1 style="margin-bottom: 2rem; color: var(--navy);">Privacy Policy</h1>
-                <p style="margin-bottom: 2rem; color: var(--text-muted);">Last Updated: 03-02-2026</p>
+        <section class="section legal-section">
+            <div class="container legal-container">
 
-                <div class="legal-content" style="line-height: 1.6; color: var(--text-main);">
+                <header class="legal-header">
+                    <h1 class="legal-title">Privacy Policy</h1>
+                    <p class="legal-updated">Last Updated: 03 February 2026</p>
+                </header>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">1. Introduction</h2>
-                    <p>This Privacy Policy explains how Jivanu Therapeutics Pvt. Ltd. (“Company,” “we,” “us,” or “our”)
-                        collects, uses, discloses, and protects personal information when you access our website,
-                        purchase products, submit biological samples, participate in research or clinical trials, or
-                        otherwise use our services (collectively, the “Services”).</p>
-                    <p>By using the Services, you consent to the practices described in this Privacy Policy and any
-                        applicable addenda.</p>
+                <div class="legal-content">
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">2. Information We Collect
-                    </h2>
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">2.1
-                        Personal Information</h3>
-                    <p>We may collect:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Name, address, email address, phone number</li>
-                        <li>Account and login credentials</li>
-                        <li>Billing and payment information</li>
-                        <li>Healthcare provider or referral information</li>
-                    </ul>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">2.2
-                        Health & Biological Information</h3>
-                    <p>Depending on the Services, we may collect:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Stool samples and derived biological material</li>
-                        <li>Microbiome sequencing data (including 16S rRNA data)</li>
-                        <li>Clinical, lifestyle, and health metadata</li>
-                        <li>Treatment response and follow-up information</li>
-                    </ul>
-                    <p>This information may constitute Sensitive Personal Data or Protected Health Information under
-                        applicable law.</p>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">2.3
-                        Technical Information</h3>
-                    <p>We automatically collect:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>IP address</li>
-                        <li>Browser type and operating system</li>
-                        <li>Device identifiers</li>
-                        <li>Website usage and analytics data</li>
-                    </ul>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">3. Purpose of Use</h2>
-                    <p>We collect and use information to:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Provide, manage, and improve Services</li>
-                        <li>Perform microbiome analysis and reporting</li>
-                        <li>Deliver clinical, investigational, or therapeutic services</li>
-                        <li>Conduct scientific research and development</li>
-                        <li>Support regulatory, safety, and compliance obligations</li>
-                        <li>Communicate operational and service-related updates</li>
-                    </ul>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">4. Consent</h2>
-                    <p>By submitting personal or biological information, placing an order, or enrolling in a study, you
-                        provide express consent for collection and use as described herein.</p>
-                    <p>Where required, additional consent will be obtained for secondary purposes such as marketing.</p>
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">
-                        Withdrawal of Consent</h3>
-                    <p>You may withdraw consent by contacting <a href="contact.html">Contact Us</a>, subject to
-                        regulatory,
-                        contractual, and safety obligations. Withdrawal may limit access to certain Services.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">5. Research & De-Identified
-                        Data</h2>
-                    <p>We may use de-identified or anonymized data derived from Services for:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Research and development</li>
-                        <li>Product validation and improvement</li>
-                        <li>Regulatory submissions</li>
-                        <li>Scientific publication</li>
-                    </ul>
-                    <p>Once de-identified, such data is no longer considered personal information under applicable law.
+                    <h2>1. Introduction</h2>
+                    <p class="legal-intro">
+                        This Privacy Policy explains how <strong>Jivanu Therapeutics Pvt. Ltd.</strong> (“Jivanu,” “we,”
+                        “us,” or “our”) collects, uses, discloses, and protects personal information when you access our
+                        website, purchase products, submit biological samples, participate in research or clinical
+                        programs, or otherwise use our services (collectively, the “Services”).
+                    </p>
+                    <p>
+                        By using the Services, you consent to the practices described in this Privacy Policy and any
+                        applicable addenda or informed consent documents.
                     </p>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">6. Disclosure of Information
-                    </h2>
-                    <p>We may disclose information to:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Certified laboratories and sequencing providers</li>
-                        <li>Healthcare professionals involved in your care</li>
-                        <li>Research collaborators (using de-identified data unless otherwise consented)</li>
-                        <li>Service providers supporting operations (e.g., cloud hosting, logistics)</li>
-                        <li>Government or regulatory authorities where required by law</li>
-                    </ul>
-                    <p>We do not sell personal or health data.</p>
+                    <h2>2. Information We Collect</h2>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">7. E-Commerce & Payment
-                        Processing</h2>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Our online store may be hosted on third-party platforms</li>
-                        <li>Payment information is encrypted and processed in accordance with PCI-DSS standards</li>
-                        <li>Transaction data is retained only as long as necessary to complete the transaction</li>
-                    </ul>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">8. Cookies</h2>
-                    <p>We use cookies to support functionality, security, and analytics. You may disable cookies through
-                        browser settings; some features may be limited.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">9. Data Security</h2>
-                    <p>We implement reasonable administrative, technical, and physical safeguards, including encryption,
-                        access controls, and secure laboratory and data environments. No system can guarantee absolute
-                        security.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">10. Your Rights</h2>
-                    <p>Subject to applicable law, you may have the right to:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Access or correct personal information</li>
-                        <li>Request deletion or restriction of processing</li>
-                        <li>Withdraw consent</li>
-                        <li>Lodge a complaint with a regulatory authority</li>
-                    </ul>
-                    <p>Requests may be submitted to <a href="contact.html">Contact Us</a>.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">11. Age of Consent</h2>
-                    <p>Services are intended for individuals of legal age. Participation by minors requires appropriate
-                        parental or guardian consent and medical oversight.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">12. Changes to This Policy
-                    </h2>
-                    <p>We may update this Privacy Policy periodically. Material changes will be posted on our website
-                        and take effect upon publication.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">ADDENDUM A: CLINICAL TRIAL &
-                        INVESTIGATIONAL SERVICES PRIVACY</h2>
-                    <p>This Addendum applies to individuals participating in clinical trials, IND studies, or other
-                        investigational services.</p>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">A.1
-                        Regulatory Basis</h3>
-                    <p>Personal and health information may be collected and processed pursuant to:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Approved clinical protocols</li>
-                        <li>Informed consent documents</li>
-                        <li>Ethics committee / IRB approvals</li>
-                        <li>Applicable drug and medical research regulations</li>
-                    </ul>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">A.2
-                        Required Data Collection</h3>
-                    <p>Participation may require collection of:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Medical history and eligibility data</li>
-                        <li>Adverse event and safety data</li>
-                        <li>Longitudinal follow-up information</li>
-                    </ul>
-                    <p>Such data collection is mandatory for trial participation and regulatory compliance.</p>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">A.3
-                        Use & Disclosure</h3>
-                    <p>Clinical trial data may be shared with:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Investigators and study staff</li>
-                        <li>Ethics committees / IRBs</li>
-                        <li>Regulatory authorities (e.g., DCGI, FDA, EMA)</li>
-                        <li>Contract research organizations (CROs)</li>
-                    </ul>
-                    <p>Data will be coded or de-identified where possible.</p>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">A.4
-                        Retention</h3>
-                    <p>Clinical trial data will be retained for periods required by applicable law and regulatory
-                        guidance, even if consent is withdrawn, where necessary for safety, audit, or compliance
-                        purposes.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">ADDENDUM B: BIOLOGICAL SAMPLE
-                        RETENTION & BIOBANKING POLICY</h2>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">B.1
-                        Sample Types</h3>
-                    <p>Samples may include stool, derived microbial material, isolates, or related biological material.
+                    <h3>2.1 Personal Information</h3>
+                    <p>
+                        We may collect personal identifiers and contact details, account credentials, billing
+                        information,
+                        and healthcare provider or referral details where relevant to the Services.
                     </p>
 
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">B.2
-                        Purpose of Retention</h3>
-                    <p>Samples may be retained for:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Completion of requested Services</li>
-                        <li>Quality control and validation</li>
-                        <li>Regulatory compliance</li>
-                        <li>Approved research and development</li>
-                    </ul>
+                    <h3>2.2 Health and Biological Information</h3>
+                    <p>
+                        Depending on the nature of the Services, we may collect biological samples (including stool
+                        samples), microbiome sequencing data (such as 16S rRNA data), clinical metadata, lifestyle
+                        information, treatment response data, and follow-up information. Such information may constitute
+                        sensitive personal data under applicable law.
+                    </p>
 
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">B.3
-                        Retention Period</h3>
-                    <p>Unless otherwise required by law or consent:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Diagnostic samples are retained for a limited period</li>
-                        <li>Clinical trial samples are retained per protocol and regulatory requirements</li>
-                        <li>Research samples may be stored long-term in a controlled biobank</li>
-                    </ul>
+                    <h3>2.3 Technical Information</h3>
+                    <p>
+                        We may automatically collect technical information such as IP address, browser type, device
+                        identifiers, and website usage analytics to support functionality, security, and performance
+                        monitoring.
+                    </p>
 
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">B.4
-                        De-Identification</h3>
-                    <p>Where feasible, retained samples are coded or de-identified to reduce re-identification risk.</p>
+                    <h2>3. Purpose of Use</h2>
+                    <p>
+                        Information collected is used to provide and manage Services, perform microbiome analysis and
+                        reporting, support clinical and investigational activities, conduct research and development,
+                        comply with regulatory obligations, and communicate service-related updates.
+                    </p>
 
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">B.5
-                        Destruction Requests</h3>
-                    <p>You may request destruction of remaining samples by contacting <a href="contact.html">Contact
-                            Us</a>, subject
-                        to:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Legal and regulatory obligations</li>
-                        <li>Active clinical or safety requirements</li>
-                        <li>Completed data integrity processes</li>
-                    </ul>
+                    <h2>4. Consent and Withdrawal</h2>
+                    <p>
+                        By submitting personal or biological information, placing an order, or enrolling in a study, you
+                        provide express consent for collection and use as described in this Policy.
+                    </p>
+                    <p>
+                        You may withdraw consent by contacting us via the <a href="contact.html">Contact Us</a> page,
+                        subject to legal, regulatory, contractual, and safety obligations. Withdrawal of consent may
+                        limit
+                        access to certain Services.
+                    </p>
 
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">B.6 No
-                        Ownership Transfer</h3>
-                    <p>Retention does not imply transfer of ownership or commercial rights to the donor beyond what is
-                        expressly consented.</p>
+                    <h2>5. Research and De-Identified Data</h2>
+                    <p>
+                        We may use de-identified or anonymized data derived from Services for research, product
+                        validation,
+                        regulatory submissions, and scientific publication. Once de-identified, such data is no longer
+                        considered personal information under applicable law.
+                    </p>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">13. Contact</h2>
-                    <p>For privacy questions: <a href="contact.html">Contact Us</a></p>
-                </div>
+                    <h2>6. Disclosure of Information</h2>
+                    <p>
+                        Information may be disclosed to certified laboratories, healthcare professionals, research
+                        collaborators, service providers, and regulatory authorities as required to deliver Services or
+                        comply with law. We do not sell personal or health data.
+                    </p>
+
+                    <h2>7. Data Security</h2>
+                    <p>
+                        We implement reasonable administrative, technical, and physical safeguards to protect personal
+                        information. However, no system can guarantee absolute security.
+                    </p>
+
+                    <h2>8. Your Rights</h2>
+                    <p>
+                        Subject to applicable law, you may request access to, correction of, deletion of, or restriction
+                        on processing of your personal information, or withdraw consent, by contacting us.
+                    </p>
+
+                    <h2>9. Age of Consent</h2>
+                    <p>
+                        Services are intended for individuals of legal age. Participation by minors requires appropriate
+                        parental or guardian consent and medical oversight.
+                    </p>
+
+                    <h2>10. Changes to This Policy</h2>
+                    <p>
+                        We may update this Privacy Policy periodically. Updates will be posted on our website and take
+                        effect upon publication.
+                    </p>
+
+                    <h2>ADDENDUM A: Clinical Trial & Investigational Services Privacy</h2>
+                    <p>
+                        This Addendum applies to individuals participating in clinical trials, IND studies, or other
+                        investigational services. Personal and health data may be collected pursuant to approved
+                        clinical
+                        protocols, informed consent documents, ethics committee approvals, and applicable regulations.
+                    </p>
+                    <p>
+                        Required data collection may include medical history, eligibility data, adverse event reporting,
+                        and longitudinal follow-up information. Such data may be retained as required by law for safety,
+                        audit, and regulatory compliance, even if consent is withdrawn.
+                    </p>
+
+                    <h2>ADDENDUM B: Biological Sample Retention & Biobanking</h2>
+                    <p>
+                        Biological samples may include stool samples, derived microbial material, isolates, or related
+                        biological material. Samples may be retained for service completion, quality control, regulatory
+                        compliance, and approved research activities.
+                    </p>
+                    <p>
+                        Where feasible, samples are coded or de-identified to reduce re-identification risk. Retention
+                        does not imply transfer of ownership or commercial rights beyond what is expressly consented.
+                    </p>
+
+                    <p class="legal-contact">
+                        For privacy-related questions, please contact us via the
+                        <a href="contact.html">Contact Us</a> page.
+                    </p>
+
+                    </div>
+
             </div>
         </section>
     </main>
@@ -273,7 +193,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Platforms</h4>
                     <ul>
@@ -281,7 +201,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -289,7 +209,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <!-- Standardized Legal Links -->
                 <div class="footer-links">
                     <h4>Legal</h4>
@@ -298,7 +218,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>

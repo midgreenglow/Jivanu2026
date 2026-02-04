@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -23,210 +23,190 @@
                     <a href="rebiome.html">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="section" style="padding: 120px 0 60px;">
-            <div class="container">
-                <h1 style="margin-bottom: 2rem; color: var(--navy);">Terms of Service</h1>
-                <p style="margin-bottom: 2rem; color: var(--text-muted);">Last Updated: 03-02-2026</p>
+        <section class="section legal-section">
+            <div class="container legal-container">
 
-                <div class="legal-content" style="line-height: 1.6; color: var(--text-main);">
+                <header class="legal-header">
+                    <h1 class="legal-title">Terms of Service</h1>
+                    <p class="legal-updated">Last Updated: 03 February 2026</p>
+                </header>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">1. Overview & Acceptance</h2>
-                    <p>These Terms of Service (“Terms”) govern access to and use of the website, products, and services
-                        (collectively, the “Services”) provided by Jivanu Therapeutics Pvt. Ltd. (“Company,” “we,” “us,”
-                        or “our”).</p>
-                    <p>By accessing the website, submitting samples, purchasing products, enrolling in studies, or
-                        otherwise using the Services, you agree to be bound by these Terms, our Privacy Policy, and any
-                        applicable informed consent documents, clinical protocols, or study agreements referenced
-                        herein. If you do not agree, you must not use the Services.</p>
-                    <p>We reserve the right to modify these Terms at any time. Continued use of the Services following
-                        updates constitutes acceptance of the revised Terms.</p>
+                <div class="legal-content">
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">2. Scope of Services</h2>
-                    <p>The Company provides microbiome-related products and services, which may include:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Stool sample collection and microbiome analysis (including 16S rRNA sequencing)</li>
-                        <li>Microbiome reports and analytics</li>
-                        <li>Live biotherapeutic products, including engineered or modified bacteria</li>
-                        <li>Fecal microbiota transplantation (FMT), including conventional and capsulized forms</li>
-                        <li>Defined microbial consortia</li>
-                        <li>Research, investigational, and clinical trial–related services</li>
-                        <li>Supporting software, reporting tools, and logistics</li>
-                    </ul>
-                    <p>Certain Services are investigational, experimental, or not yet approved for general clinical use
-                        and may be offered only under regulatory authorization, clinical protocols, or research
-                        frameworks.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">3. Eligibility</h2>
-                    <p>You represent and warrant that:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>You are legally capable of providing informed consent</li>
-                        <li>All information provided is accurate, complete, and current</li>
-                        <li>You comply with all applicable laws, regulations, and eligibility criteria</li>
-                    </ul>
-                    <p>Access to specific Services may be restricted based on medical, regulatory, or geographic
-                        requirements.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">4. No Medical Advice</h2>
-                    <p>Unless explicitly stated in a clinical agreement:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Information provided through reports, dashboards, or the website is not medical advice</li>
-                        <li>Microbiome data may be informational, research-based, or adjunctive in nature</li>
-                        <li>You should consult a licensed healthcare professional before making medical decisions</li>
-                    </ul>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">5. Clinical, Investigational
-                        & IND Services</h2>
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">5.1
-                        Investigational Use</h3>
-                    <p>Certain products and Services:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Are investigational or experimental</li>
-                        <li>May be provided under an Investigational New Drug (IND) application or equivalent regulatory
-                            authorization</li>
-                        <li>Have not been approved for general commercial use</li>
-                    </ul>
-                    <p>Participation in such Services is voluntary and subject to strict eligibility criteria.</p>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">5.2
-                        Informed Consent</h3>
-                    <p>Enrollment in clinical trials, IND studies, or investigational Services requires:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Execution of a written informed consent document</li>
-                        <li>Acknowledgment of known and unknown risks</li>
-                        <li>Understanding that outcomes are not guaranteed</li>
-                    </ul>
-                    <p>Consent may be withdrawn at any time, subject to regulatory and safety obligations.</p>
-
-                    <h3 style="color: var(--navy); margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.1rem;">5.3 No
-                        Guarantee of Benefit</h3>
-                    <p>You acknowledge that:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Investigational interventions may not provide therapeutic benefit</li>
-                        <li>Adverse events, including serious or unforeseen risks, may occur</li>
-                        <li>The science of the microbiome is evolving and uncertain</li>
-                    </ul>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">6. Biological Samples</h2>
-                    <p>By submitting biological samples, you acknowledge and agree that:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Proper collection and handling are essential for accuracy and safety</li>
-                        <li>Samples may be rejected if quality or compliance standards are not met</li>
-                        <li>Samples may be processed, stored, transferred, or destroyed in accordance with:
-                            <ul style="list-style-type: circle; margin-left: 2rem;">
-                                <li>Applicable law</li>
-                                <li>Regulatory requirements</li>
-                                <li>Approved protocols</li>
-                                <li>Your informed consent</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p>Limited rights to use samples are granted solely to perform the Services, quality control,
-                        regulatory compliance, and approved research.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">7. Research & Data Use</h2>
-                    <p>You acknowledge that data derived from Services may be used for:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Research and development</li>
-                        <li>Validation of diagnostics or therapeutics</li>
-                        <li>Regulatory submissions</li>
-                        <li>Scientific publication</li>
-                    </ul>
-                    <p>All research use will rely on de-identified or anonymized data, unless explicit consent or legal
-                        authorization permits otherwise.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">8. Accuracy & Availability of
-                        Information</h2>
-                    <p>Content on the website is provided for general informational purposes only. We do not warrant
-                        that information is complete, current, or error-free.</p>
-                    <p>We reserve the right to correct errors, update content, or cancel Services where information is
-                        inaccurate or incomplete.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">9. Products, Pricing &
-                        Modifications</h2>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Products and Services may be limited by geography, regulation, or eligibility</li>
-                        <li>Prices and availability may change without notice</li>
-                        <li>We may modify, suspend, or discontinue any Service at any time</li>
-                    </ul>
-                    <p>The Company shall not be liable for such modifications or discontinuation.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">10. Billing & Accounts</h2>
-                    <p>You agree to provide accurate billing and account information and to promptly update such
-                        information as required to complete transactions or resolve issues.</p>
-                    <p>Refunds, if any, are governed by the applicable service-specific policy.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">11. Intellectual Property
-                    </h2>
-                    <p>All intellectual property related to the Services—including software, methodologies, protocols,
-                        reports, trademarks, and content—is owned by or licensed to the Company.</p>
-                    <p>No rights are granted except as expressly stated. Unauthorized use is prohibited.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">12. Prohibited Uses</h2>
-                    <p>You may not use the Services to:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Violate laws or regulations</li>
-                        <li>Infringe intellectual property rights</li>
-                        <li>Provide false or misleading information</li>
-                        <li>Interfere with clinical, research, or regulatory processes</li>
-                        <li>Transmit malicious code</li>
-                        <li>Harass, abuse, or discriminate against others</li>
-                        <li>Compromise data security or confidentiality</li>
-                    </ul>
-                    <p>Violation may result in immediate termination of access.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">13. Disclaimer of Warranties
-                    </h2>
-                    <p>The Services are provided “as is” and “as available.” We disclaim all warranties, express or
-                        implied, including accuracy, fitness for a particular purpose, or non-infringement.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">14. Limitation of Liability
-                    </h2>
-                    <p>To the maximum extent permitted by law:</p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>The Company shall not be liable for indirect, incidental, consequential, or punitive damages
-                        </li>
-                        <li>Total liability shall not exceed the amount paid for the relevant Service</li>
-                    </ul>
-                    <p>Nothing herein limits liability that cannot be excluded by law.</p>
-
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">15. Indemnification</h2>
-                    <p>You agree to indemnify and hold harmless the Company and its affiliates from claims arising from:
+                    <h2>1. Overview and Acceptance</h2>
+                    <p class="legal-intro">
+                        These Terms of Service (“Terms”) govern access to and use of the website, products, software
+                        platforms, biological services, and related offerings (collectively, the “Services”) provided by
+                        <strong>Jivanu Therapeutics Pvt. Ltd.</strong> (“Jivanu,” “Company,” “we,” “us,” or “our”).
                     </p>
-                    <ul style="list-style-type: disc; margin-left: 2rem; margin-bottom: 1rem;">
-                        <li>Your breach of these Terms</li>
-                        <li>Misuse of Services</li>
-                        <li>Violation of laws or third-party rights</li>
-                    </ul>
+                    <p>
+                        By accessing the website, submitting biological samples, purchasing products, enrolling in
+                        research or clinical programs, or otherwise using the Services, you acknowledge that you have
+                        read, understood, and agree to be legally bound by these Terms, together with our Privacy Policy
+                        and any applicable informed consent documents, clinical protocols, or study agreements.
+                    </p>
+                    <p>
+                        We reserve the right to modify these Terms at any time. Continued use of the Services following
+                        publication of updated Terms constitutes acceptance of such changes.
+                    </p>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">16. Severability</h2>
-                    <p>If any provision is held unenforceable, the remaining provisions shall remain in full force and
-                        effect.</p>
+                    <h2>2. Scope of Services</h2>
+                    <p>
+                        Jivanu operates in the field of microbiome science and therapeutics and provides services that
+                        may
+                        include biological sample collection, microbiome sequencing and analysis (including 16S rRNA
+                        sequencing), microbiome reports and analytics, live biotherapeutic products, engineered or
+                        modified microbial formulations, fecal microbiota transplantation (FMT), defined microbial
+                        consortia, investigational and clinical trial services, and associated software, logistics, and
+                        research support.
+                    </p>
+                    <p>
+                        Certain Services are investigational, experimental, or offered only within regulatory or
+                        research frameworks and may not be approved for general clinical or commercial use.
+                    </p>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">17. Governing Law</h2>
-                    <p>These Terms are governed by and construed in accordance with the laws of India, without regard to
-                        conflict-of-law principles.</p>
+                    <h2>3. Eligibility</h2>
+                    <p>
+                        By using the Services, you represent that you are legally capable of providing informed consent,
+                        that all information you provide is accurate and complete, and that you comply with applicable
+                        laws and eligibility criteria. Access to specific Services may be restricted based on medical,
+                        regulatory, ethical, or geographic considerations.
+                    </p>
 
-                    <h2 style="color: var(--navy); margin-top: 2rem; margin-bottom: 1rem;">18. Contact</h2>
-                    <p>For questions regarding these Terms: <a href="contact.html">Contact Us</a></p>
-                </div>
+                    <h2>4. No Medical Advice</h2>
+                    <p>
+                        Unless expressly stated in a written clinical agreement, information provided through the
+                        Services does not constitute medical advice. Microbiome data and analyses may be informational
+                        or investigational in nature. You should consult a licensed healthcare professional before
+                        making medical decisions.
+                    </p>
+
+                    <h2>5. Clinical, Investigational, and IND Services</h2>
+                    <p>
+                        Certain Services may be provided under investigational or clinical trial frameworks, including
+                        Investigational New Drug (IND) or equivalent regulatory authorizations. Participation is
+                        voluntary and subject to eligibility screening, regulatory oversight, and execution of
+                        informed consent documentation.
+                    </p>
+                    <p>
+                        You acknowledge that investigational interventions may not provide therapeutic benefit and may
+                        involve known or unknown risks. Outcomes are not guaranteed, and the science of the microbiome
+                        continues to evolve.
+                    </p>
+
+                    <h2>6. Biological Samples</h2>
+                    <p>
+                        By submitting biological samples, you acknowledge that proper collection and handling are
+                        essential for safety and analytical accuracy. Samples may be rejected if quality, regulatory,
+                        or protocol requirements are not met.
+                    </p>
+                    <p>
+                        Samples may be processed, stored, transferred, retained, or destroyed in accordance with
+                        applicable law, regulatory obligations, approved protocols, and your informed consent. Limited
+                        rights to use samples are granted solely to perform the Services, quality control, regulatory
+                        compliance, and approved research activities.
+                    </p>
+
+                    <h2>7. Research and Data Use</h2>
+                    <p>
+                        Data generated through the Services may be used for research and development, validation of
+                        diagnostics or therapeutics, regulatory submissions, and scientific publication. Such use will
+                        rely on de-identified or anonymized data unless explicit consent or legal authorization permits
+                        otherwise.
+                    </p>
+
+                    <h2>8. Products, Pricing, and Modifications</h2>
+                    <p>
+                        Products and Services may be limited by geography, regulation, or eligibility. Prices and
+                        availability may change without notice. We may modify, suspend, or discontinue any Service at
+                        any time and shall not be liable for such changes.
+                    </p>
+
+                    <h2>9. Billing and Accounts</h2>
+                    <p>
+                        You agree to provide accurate billing and account information and to promptly update such
+                        information as necessary. Refunds, if any, are governed by applicable service-specific policies.
+                    </p>
+
+                    <h2>10. Intellectual Property</h2>
+                    <p>
+                        All intellectual property related to the Services, including software, methodologies,
+                        protocols, reports, trademarks, and content, is owned by or licensed to the Company. No rights
+                        are granted except as expressly stated.
+                    </p>
+
+                    <h2>11. Prohibited Uses</h2>
+                    <p>
+                        You may not misuse the Services, violate applicable laws, infringe intellectual property rights,
+                        interfere with clinical or regulatory processes, transmit malicious code, or compromise data
+                        security or confidentiality. Violations may result in immediate termination of access.
+                    </p>
+
+                    <h2>12. Disclaimer of Warranties</h2>
+                    <p>
+                        The Services are provided on an “as is” and “as available” basis. We disclaim all warranties,
+                        express or implied, including accuracy, fitness for a particular purpose, and non-infringement,
+                        to the fullest extent permitted by law.
+                    </p>
+
+                    <h2>13. Limitation of Liability</h2>
+                    <p>
+                        To the maximum extent permitted by law, the Company shall not be liable for indirect,
+                        incidental, consequential, or punitive damages. Total liability shall not exceed the amount
+                        paid for the relevant Service.
+                    </p>
+
+                    <h2>14. Indemnification</h2>
+                    <p>
+                        You agree to indemnify and hold harmless the Company and its affiliates from claims arising from
+                        your breach of these Terms, misuse of the Services, or violation of law or third-party rights.
+                    </p>
+
+                    <h2>15. Severability</h2>
+                    <p>
+                        If any provision of these Terms is held unenforceable, the remaining provisions shall remain
+                        in full force and effect.
+                    </p>
+
+                    <h2>16. Governing Law</h2>
+                    <p>
+                        These Terms are governed by and construed in accordance with the laws of India, without regard
+                        to conflict-of-law principles.
+                    </p>
+
+                    <h2>17. Contact</h2>
+                    <p class="legal-contact">
+                        For questions regarding these Terms, please contact us via the
+                        <a href="contact.html">Contact Us</a> page.
+                    </p>
+
+                    </div>
+
             </div>
         </section>
     </main>
@@ -237,7 +217,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <!-- Footer links will be standardized across all pages in the next step -->
                 <div class="footer-links">
                     <h4>Platforms</h4>
@@ -246,7 +226,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -254,7 +234,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -262,7 +242,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>

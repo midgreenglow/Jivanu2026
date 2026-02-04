@@ -9,8 +9,8 @@
     <script src="js/script.js" defer></script>
 </head>
 
-<body>
-    <header>
+<body class="bg-eef1f4">
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -23,18 +23,25 @@
                     <a href="rebiome.html">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -61,10 +68,10 @@
                             style="background: var(--cyan); border-color: var(--cyan);">Get Your Gut Report</a>
 
                     </div>
-                </div>
+                    </div>
                 <div class="hero-visual">
                     <img src="assets/images/kit.jpg" alt="Jivanu Atlas Kit">
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -72,20 +79,19 @@
             <div class="container">
                 <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                     <div>
-                        <h2>A Simple Way to Know Your Gut</h2>
-                        <p style="margin: 1.5rem 0;">Using our <strong>easy-to-use at-home collection kit</strong>, you
+                        <h2 class="section-title">A Simple Way to Know Your Gut</h2>
+                        <p class="hero-lead" style="margin: 1.5rem 0; font-size: 1.25rem; text-align: justify;">Using our <strong>easy-to-use at-home collection kit</strong>, you
                             provide a small
                             stool (poop) sample. The sample is analyzed using <strong>long-read 16S rRNA
                                 sequencing</strong>, enabling
                             deep and accurate profiling of your gut microbiome.</p>
-                        <p>The result is a <strong></strong>personalized gut health report</strong> that translates
-                            complex microbiome data into
-                            clear, meaningful insights-for individuals and clinicians alike.</p>
+                        <p class="hero-lead" style="font-size: 1.25rem; text-align: justify;">The result is a <strong></strong>personalized gut health report</strong> that translates
+                            complex microbiome data into clear, meaningful insights-for individuals and clinicians alike.</p>
                     </div>
                     <div class="hero-visual">
                         <img src="assets/images/report.png" alt="Jivanu Atlas Report Components">
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -95,28 +101,28 @@
             <div class="container">
                 <div class="section-header">
                     <h2 style="color: white; font-size: 2.5rem;">Built on Rigorous Science</h2>
-                </div>
+                    </div>
                 <div class="grid"
                     style="grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto 0;">
                     <ul class="benefit-list">
                         <li class="benefit-item"><span class="check" style="color: var(--cyan);">✓</span>
-                            <div style="color: white; opacity: 0.9;">Long-read 16S rRNA sequencing</div>
+                            <div style="color: white; opacity: 0.9; font-size: 1.2rem;">Long-read 16S rRNA sequencing</div>
                         </li>
                         <li class="benefit-item"><span class="check" style="color: var(--cyan);">✓</span>
-                            <div style="color: white; opacity: 0.9;">Validated analytical and bioinformatics pipelines
+                            <div style="color: white; opacity: 0.9; font-size: 1.2rem;">Validated analytical and bioinformatics pipelines
                             </div>
                         </li>
                     </ul>
                     <ul class="benefit-list">
                         <li class="benefit-item"><span class="check" style="color: var(--cyan);">✓</span>
-                            <div style="color: white; opacity: 0.9;">Interpreted by microbiome scientists</div>
+                            <div style="color: white; opacity: 0.9; font-size: 1.2rem;">Interpreted by microbiome scientists</div>
                         </li>
                         <li class="benefit-item"><span class="check" style="color: var(--cyan);">✓</span>
-                            <div style="color: white; opacity: 0.9;">Designed to be informative, reliable, and
+                            <div style="color: white; opacity: 0.9; font-size: 1.2rem;">Designed to be informative, reliable, and
                                 clinically relevant</div>
                         </li>
                     </ul>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -124,27 +130,27 @@
             <div class="container">
                 <div class="section-header">
                     <h2 style="font-size: 3rem;">Who Is It For?</h2>
-                </div>
+                    </div>
 
                 <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                     <div class="problem-card" style="text-align: center; padding: 3rem 2rem;">
-                        <h3 style="margin-bottom: 1rem;">Individuals</h3>
-                        <p>Interested in understanding their gut health</p>
+                        <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">Individuals</h3>
+                        <p style="font-size: 1.1rem;">Interested in understanding their gut health</p>
                     </div>
                     <div class="problem-card" style="text-align: center; padding: 3rem 2rem;">
-                        <h3 style="margin-bottom: 1rem;">Health Enthusiasts</h3>
-                        <p>Seeking personalized nutrition insights</p>
+                        <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">Health Enthusiasts</h3>
+                        <p style="font-size: 1.1rem;">Seeking personalized nutrition insights</p>
                     </div>
                     <div class="problem-card" style="text-align: center; padding: 3rem 2rem;">
-                        <h3 style="margin-bottom: 1rem;">Clinicians</h3>
-                        <p>Exploratory microbiome data for research and clinical practice</p>
+                        <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">Clinicians</h3>
+                        <p style="font-size: 1.1rem;">Exploratory microbiome data for research and clinical practice</p>
                     </div>
-                </div>
+                    </div>
 
                 <div style="text-align: center; margin-top: 4rem; margin-bottom: 4rem;">
                     <a href="contact.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 3rem;">Book
                         Your Gut Test</a>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -196,7 +202,7 @@
                             intended for informational and research purposes only and is not a diagnostic test or a
                             substitute for medical advice.</p>
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -204,33 +210,33 @@
             <div class="container">
                 <div class="section-header">
                     <h2>What’s Inside Your Jivanu Atlas™ Report</h2>
-                </div>
+                    </div>
                 <div class="grid" style="grid-template-columns: repeat(3, 1fr); gap: 2.5rem;">
-                    <div class="problem-card">
+                    <div class="problem-card" style="text-align: center;">
                         <h3>Gut Richness Score</h3>
                         <p>A measure of microbial diversity-an important indicator of gut resilience.</p>
                     </div>
-                    <div class="problem-card">
+                    <div class="problem-card" style="text-align: center;">
                         <h3>Gut Inflammation Score</h3>
                         <p>A microbiome-informed score reflecting patterns associated with gut inflammation.</p>
                     </div>
-                    <div class="problem-card">
+                    <div class="problem-card" style="text-align: center;">
                         <h3>Pathogen Load Assessment</h3>
                         <p>Screening for potentially harmful or opportunistic microbes.</p>
                     </div>
-                    <div class="problem-card">
+                    <div class="problem-card" style="text-align: center;">
                         <h3>Dietary Insights</h3>
                         <p>Microbiome-aligned nutritional recommendations to support gut balance.</p>
                     </div>
-                    <div class="problem-card">
+                    <div class="problem-card" style="text-align: center;">
                         <h3>Fun Microbiome Highlights</h3>
                         <p>Meet your Top 10 Gut Residents and learn what they do.</p>
                     </div>
-                    <div class="problem-card">
+                    <div class="problem-card" style="text-align: center;">
                         <h3>Expert Consultation</h3>
                         <p>Guidance from microbiome and health experts to help interpret your report.</p>
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
     </main>
@@ -240,7 +246,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Platforms</h4>
                     <ul>
@@ -248,7 +254,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -256,7 +262,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -264,7 +270,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>

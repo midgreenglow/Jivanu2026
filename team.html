@@ -136,7 +136,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo-container">
                 <div class="logo">Jivanu<span>.</span></div>
@@ -149,18 +149,25 @@
                     <a href="rebiome.html">ReBiome™</a>
                     <a href="novabiome.html">NovaBiome™</a>
                 </div>
-
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+<button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                     <span class="hamburger-line"></span>
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <a href="team.html" class="mobile-link">Team</a>
                     <a href="careers.html" class="mobile-link">Careers</a>
                     <a href="contact.html" class="mobile-link">Contact</a>
                     <a href="evidence.html" class="mobile-link">Clinical Evidence</a>
+                    <div class="mobile-theme">
+                        <span class="mobile-theme-label">Theme</span>
+                        <label class="theme-switch">
+                            <input type="checkbox" class="theme-toggle-input" data-theme-toggle aria-label="Toggle dark mode">
+                            <span class="theme-slider"><span class="theme-knob"></span></span>
+                        </label>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -168,7 +175,7 @@
 
     <main>
         <!-- Redesigned Hero & Founders Section -->
-        <section class="section"
+        <section class="section team-hero"
             style="padding-top: 180px; padding-bottom: 100px; background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); overflow: hidden;">
             <div class="container">
                 <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
@@ -196,11 +203,12 @@
                                 style="height: 350px;">
                             <div class="founder-info" style="padding: 2rem;">
                                 <h3 style="font-size: 1.6rem;">Dr. Sachet Shukla</h3>
-                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Founder</p>
+                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Co-Founder</p>
                                 <div class="social-icons" style="gap: 1.2rem; font-size: 1.4rem;">
                                     <a href="https://www.linkedin.com/in/sachet-shukla-3928aa/" target="_blank"><i
                                             class="fab fa-linkedin"></i></a>
-                                    <a href="mailto:sachet.shukla@jivanutx.com"><i class="fas fa-envelope"></i></a>
+                                    <a href="https://scholar.google.com/citations?user=m0jyARcAAAAJ&hl=en"
+                                        target="_blank"><i class="fas fa-graduation-cap"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -209,16 +217,17 @@
                             <img src="assets/images/kunal.png" alt="Kunal" class="founder-image" style="height: 350px;">
                             <div class="founder-info" style="padding: 2rem;">
                                 <h3 style="font-size: 1.6rem;">Dr. Kunal Rai</h3>
-                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Founder</p>
+                                <p style="font-size: 0.9rem; margin-bottom: 1rem;">Co-Founder</p>
                                 <div class="social-icons" style="gap: 1.2rem; font-size: 1.4rem;">
                                     <a href="https://www.linkedin.com/in/kunal-rai-80/" target="_blank"><i
                                             class="fab fa-linkedin"></i></a>
-                                    <a href="mailto:kunal.rai@jivanutx.com"><i class="fas fa-envelope"></i></a>
+                                    <a href="https://scholar.google.com/citations?user=hjd_sfMAAAAJ&hl=en"
+                                        target="_blank"><i class="fas fa-graduation-cap"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
             </div>
         </section>
 
@@ -228,7 +237,7 @@
                 <div class="section-header" style="text-align: center; margin-bottom: 4rem;">
                     <h2 style="color: white;">Stronger Together</h2>
                     <p style="color: rgba(255,255,255,0.7);">Our diverse team bringing discoveries from lab to life</p>
-                </div>
+                    </div>
                 <img src="assets/images/Team.jpg" alt="Jivanu Team Group Photo" class="team-group-photo">
             </div>
         </section>
@@ -236,122 +245,16 @@
         <!-- Team Members Section -->
         <section class="team-section" style="background: var(--light-bg);">
             <div class="container">
-                <div class="section-header" style="text-align: center; margin-bottom: 5rem;">
+                <div class="section-header" style="text-align: center; margin-bottom: 0;">
                     <h2>The Jivanu Team</h2>
-                    <p>Dedicated professionals driving innovation every day</p>
-                </div>
-                <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 2rem;">
-                    <!-- Team Member 1 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="K Sunil Kini" class="member-image">
-                        <h4>K Sunil Kini</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
+                    <p style="max-width: 800px; margin: 0 auto; color: var(--text-muted); line-height: 1.6;">Our team
+                        comprises a
+                        multidisciplinary group of scientists, clinicians, and innovators dedicated to unraveling the
+                        complexities of the microbiome. With expertise spanning bioinformatics, microbiology, and
+                        clinical research, we are united in our mission to transform patient care through precision
+                        microbiome therapeutics.</p>
                     </div>
-                    <!-- Team Member 2 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Aakanksha Verma" class="member-image">
-                        <h4>Aakanksha Verma</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 3 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Hithesh Kumar Ck" class="member-image">
-                        <h4>Hithesh Kumar Ck</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 4 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Anirban Ghosh" class="member-image">
-                        <h4>Anirban Ghosh</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 5 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Gopika Menon" class="member-image">
-                        <h4>Gopika Menon</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 6 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Karanveer" class="member-image">
-                        <h4>Karanveer</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 7 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Venkat Chand Godugu" class="member-image">
-                        <h4>Venkat Chand Godugu</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 8 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Pawan Kumar" class="member-image">
-                        <h4>Pawan Kumar</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 9 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Rohit Kongari" class="member-image">
-                        <h4>Rohit Kongari</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 10 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Kalyani" class="member-image">
-                        <h4>Kalyani</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                    <!-- Team Member 11 -->
-                    <div class="member-card">
-                        <img src="assets/images/team_placeholder.png" alt="Prachetash Ghosh" class="member-image">
-                        <h4>Prachetash Ghosh</h4>
-                        <p>Team Member</p>
-                        <div class="social-icons" style="font-size: 1.1rem; gap: 1rem;">
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Team Grid Removed as per request -->
             </div>
         </section>
 
@@ -360,28 +263,35 @@
             <div class="container">
                 <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 4rem;">
                     <div class="problem-card"
-                        style="text-align: left; padding: 3.5rem; background: var(--light-bg); border: none;">
-                        <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">🎯</div>
-                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--navy);">Our Mission</h3>
-                        <p style="color: var(--text-main); line-height: 1.8;">To empower people with deep biological
-                            insights that lead to better health outcomes. We are dedicated to translating complex
-                            microbiome data into precision-driven therapies that target the root cause of disease.</p>
+                        style="text-align: left; padding: 0; background: var(--light-bg); border: none; overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-md);">
+                        <img src="assets/images/mission_infographic.png" alt="Our Mission Infographic"
+                            style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                        <div style="padding: 2.5rem;">
+                            <h3 style="margin-bottom: 1rem; font-size: 1.5rem; color: var(--navy);">Our Mission</h3>
+                            <p style="color: var(--text-main); line-height: 1.8;">To empower people with deep biological
+                                insights that lead to better health outcomes. We are dedicated to translating complex
+                                microbiome data into precision-driven therapies that target the root cause of disease.
+                            </p>
+                        </div>
                     </div>
                     <div class="problem-card"
-                        style="text-align: left; padding: 3.5rem; background: var(--light-bg); border: none;">
-                        <div style="font-size: 2.5rem; margin-bottom: 1.5rem;">🔭</div>
-                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem; color: var(--navy);">Our Vision</h3>
-                        <p style="color: var(--text-main); line-height: 1.8;">A world where microbiome health is as
-                            foundational to medicine as genetics. We envision a future where personalized microbial
-                            interventions are accessible to all.</p>
+                        style="text-align: left; padding: 0; background: var(--light-bg); border: none; overflow: hidden; border-radius: 20px; box-shadow: var(--shadow-md);">
+                        <img src="assets/images/vision_infographic.png" alt="Our Vision Infographic"
+                            style="width: 100%; height: 300px; object-fit: cover; display: block;">
+                        <div style="padding: 2.5rem;">
+                            <h3 style="margin-bottom: 1rem; font-size: 1.5rem; color: var(--navy);">Our Vision</h3>
+                            <p style="color: var(--text-main); line-height: 1.8;">A world where microbiome health is as
+                                foundational to medicine as genetics. We envision a future where personalized microbial
+                                interventions are accessible to all.</p>
+                        </div>
                     </div>
-                </div>
+                    </div>
                 <div style="margin-top: 6rem;">
                     <h2 style="margin-bottom: 1.5rem;">Want to Join the Revolution?</h2>
                     <p style="margin-bottom: 3rem; color: var(--text-muted);">We're always looking for talented
                         researchers, scientists, and engineers.</p>
                     <a href="careers.html" class="btn btn-primary">Work with Jivanu</a>
-                </div>
+                    </div>
             </div>
         </section>
     </main>
@@ -392,7 +302,7 @@
                 <div>
                     <img src="assets/images/Jivanu_Logo.png" alt="Jivanu Logo"
                         style="max-width: 280px; margin-bottom: 1.5rem;">
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Platforms</h4>
                     <ul>
@@ -400,7 +310,7 @@
                         <li><a href="rebiome.html">ReBiome™</a></li>
                         <li><a href="novabiome.html">NovaBiome™</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
@@ -408,7 +318,7 @@
                         <li><a href="careers.html">Careers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                    </div>
                 <div class="footer-links">
                     <h4>Legal</h4>
                     <ul>
@@ -416,7 +326,7 @@
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="refund.html">Refund Policy</a></li>
                     </ul>
-                </div>
+                    </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2026 Jivanu Therapeutics Pvt Ltd. All rights reserved.</p>
