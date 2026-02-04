@@ -812,6 +812,7 @@ footer {
     gap: 1.5rem;
 }
 
+
 .mobile-menu-overlay.active {
     right: 0;
 }
@@ -826,6 +827,14 @@ footer {
 
 .hamburger-menu.active .hamburger-line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.hamburger-menu.active {
+    position: fixed;
+    top: 38px;
+    right: 32px;
+    margin-left: 0;
+    z-index: 10006;
 }
 
 .mobile-link {
@@ -847,6 +856,8 @@ footer {
     letter-spacing: 0.14em;
     color: var(--text-muted);
     font-weight: 700;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
 }
 
 .mobile-only {
@@ -858,9 +869,39 @@ footer {
     padding-top: 0;
 }
 
+.mobile-link.mobile-only {
+    background: rgba(31, 202, 211, 0.08);
+    border: 1px solid rgba(31, 202, 211, 0.2);
+    border-radius: 12px;
+    padding: 0.65rem 0.9rem;
+    margin-top: 0.5rem;
+    color: var(--navy);
+}
+
+[data-theme="dark"] .mobile-link.mobile-only {
+    background: rgba(31, 202, 211, 0.12);
+    border-color: rgba(31, 202, 211, 0.3);
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    .mobile-only {
+        display: block !important;
+    }
+}
+
 .mobile-link.active {
     color: var(--cyan);
     font-weight: 600;
+}
+
+.mobile-link.signin-link {
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+[data-theme="dark"] .mobile-link.signin-link {
+    color: var(--cyan) !important;
 }
 
 .mobile-divider {
@@ -1028,7 +1069,7 @@ footer {
 }
 
 [data-theme="dark"] .mobile-divider {
-    background: #1d2a38;
+    background: linear-gradient(90deg, transparent, rgba(31, 202, 211, 0.45), transparent);
 }
 
 [data-theme="dark"] .mobile-logout {
@@ -1661,6 +1702,23 @@ footer {
         text-align: center !important;
     }
 
+    .founders-side {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-card {
+        width: 100% !important;
+        max-width: 320px;
+    }
+
+    .team-group-photo {
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        aspect-ratio: auto;
+    }
+
     .hero-visual img {
         max-width: 100%;
     }
@@ -1735,6 +1793,18 @@ footer {
         padding: 2.5rem 2rem !important;
     }
 
+    .science-benefits-grid {
+        gap: 0;
+    }
+
+    .science-benefits-grid .benefit-list {
+        margin: 0;
+    }
+
+    .science-benefits-grid .benefit-item:last-child {
+        margin-bottom: 0;
+    }
+
     .pricing-card h2 {
         font-size: 3rem !important;
     }
@@ -1788,4 +1858,100 @@ footer {
 body[class^="bg-"] {
     min-height: 100vh;
     transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hero-mini {
+        padding: 120px 0 70px !important;
+    }
+
+    .hero-mini h1 {
+        font-size: 2.4rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .hero-mini p {
+        font-size: 1rem !important;
+        margin: 1.5rem auto 0 !important;
+        padding: 0 0.5rem;
+    }
+
+    .job-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+        margin-top: 2.5rem !important;
+    }
+
+    .job-card {
+        padding: 2rem 1.5rem !important;
+        border-radius: 16px !important;
+    }
+
+    .job-card h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .job-tag,
+    .status-tag {
+        font-size: 0.75rem !important;
+    }
+
+    .careers-cta {
+        margin-top: 3rem !important;
+        padding-top: 2.5rem !important;
+    }
+
+    .careers-cta h3 {
+        font-size: 1.4rem;
+    }
+
+    .careers-cta p {
+        font-size: 0.95rem !important;
+        margin: 1rem 0 !important;
+    }
+
+    .careers-cta a {
+        font-size: 1.1rem !important;
+    }
+
+    .comp-bio-section {
+        padding: 80px 0 !important;
+    }
+
+    .comp-bio-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    .comp-bio-visual {
+        width: 100%;
+        order: 2;
+    }
+
+    .comp-bio-section h2 {
+        font-size: 2rem !important;
+    }
+
+    .comp-bio-section p {
+        font-size: 1rem !important;
+        margin: 1.5rem 0 !important;
+    }
+
+    .comp-bio-section ul {
+        margin: 1.5rem 0 0 !important;
+    }
+
+    .comp-bio-section li {
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+    }
+
+    .comp-bio-section li span:first-child {
+        font-size: 1.25rem !important;
+        line-height: 1.2;
+    }
+
+    .comp-bio-visual img {
+        border-radius: 18px !important;
+    }
 }

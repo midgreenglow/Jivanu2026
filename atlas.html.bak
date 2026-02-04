@@ -30,7 +30,7 @@
                 </button>
 
                 <div class="mobile-menu-overlay" id="mobile-menu-overlay">
-                    <a href="signin.html" class="mobile-link signin-link">Sign In</a>
+                    <a href="signin.html" class="mobile-link">Sign In</a>
                     <div class="mobile-section-label mobile-only">Platforms</div>
                     <a href="atlas.html" class="mobile-link mobile-only">Jivanu Atlas™</a>
                     <a href="rebiome.html" class="mobile-link mobile-only">ReBiome™</a>
@@ -194,7 +194,7 @@
                 <div class="section-header">
                     <h2 style="color: white; font-size: 2.5rem;">Built on Rigorous Science</h2>
                     </div>
-                <div class="grid science-benefits-grid"
+                <div class="grid"
                     style="grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 900px; margin: 3rem auto 0;">
                     <ul class="benefit-list">
                         <li class="benefit-item"><span class="check" style="color: var(--cyan);">✓</span>
