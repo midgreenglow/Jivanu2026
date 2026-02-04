@@ -38,4 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    const logoutButton = document.getElementById('mobile-logout');
+    if (logoutButton) {
+        logoutButton.addEventListener('click', () => {
+            localStorage.removeItem('jivanu_token');
+            window.location.href = 'signin.html';
+        });
+    }
 });
