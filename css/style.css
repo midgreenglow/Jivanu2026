@@ -488,6 +488,11 @@ nav {
     text-align: center;
 }
 
+/* Offset in-page anchors so fixed header doesn't cover section titles */
+#atlas-pricing {
+    scroll-margin-top: 190px;
+}
+
 .price {
     font-size: 4rem;
     font-weight: 700;
@@ -1887,6 +1892,13 @@ footer {
 body[class^="bg-"] {
     min-height: 100vh;
     transition: background-color 0.3s ease;
+}
+
+@media (min-width: 769px) {
+    .reach-out-btn {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
 }
 
 @media (max-width: 768px) {
